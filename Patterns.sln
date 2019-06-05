@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listener", "Listener.csproj", "{D0759319-6098-4867-8C38-E76142FF9C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listener", "Listener\Listener.csproj", "{D0759319-6098-4867-8C38-E76142FF9C44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
