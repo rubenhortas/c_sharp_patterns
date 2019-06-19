@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29001.49
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listener", "Listener\Listener.csproj", "{D0759319-6098-4867-8C38-E76142FF9C44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{20590076-F2E1-4B5E-8739-28B1C1BBEFF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory", "Factory\Factory.csproj", "{20590076-F2E1-4B5E-8739-28B1C1BBEFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{F0E38346-C66C-479F-974D-F00607303916}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{20590076-F2E1-4B5E-8739-28B1C1BBEFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20590076-F2E1-4B5E-8739-28B1C1BBEFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20590076-F2E1-4B5E-8739-28B1C1BBEFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0E38346-C66C-479F-974D-F00607303916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0E38346-C66C-479F-974D-F00607303916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0E38346-C66C-479F-974D-F00607303916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0E38346-C66C-479F-974D-F00607303916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
