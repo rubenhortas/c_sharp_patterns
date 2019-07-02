@@ -6,7 +6,7 @@ namespace Composite
     {
         public override float GetTotal(Venta venta)
         {
-            float minTotal = int.MaxValue;
+            float minTotal = venta.Total;
             float total;
 
             foreach (IEstrategiaFijarPreciosVenta estrategiaFijarPreciosVenta in estrategiasFijarPreciosVenta)
