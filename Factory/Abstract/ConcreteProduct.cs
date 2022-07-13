@@ -2,12 +2,10 @@
 
 namespace Factory.Abstract
 {
-    /// <summary>
-    /// This is a class which implements the Product interface
-    /// </summary>
+    // This is a class which implements the Product interface.
     class ConcreteProduct : Product
     {
-        public override void Operation()
+        public override void DoOperation()
         {
             Console.WriteLine("Product operation done!");
         }

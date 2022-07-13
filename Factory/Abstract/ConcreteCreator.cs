@@ -2,9 +2,10 @@
 {
     class ConcreteCreator : Creator
     {
-        public override Product factoryMethod()
+        public override Product RunFactoryMethod()
         {
-            return new ConcreteProduct(); // You can not instantiate abstract classes
+            // You can not instantiate abstract classes.
+            return new ConcreteProduct(); 
         }
     }
 }

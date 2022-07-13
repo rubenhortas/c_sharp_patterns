@@ -1,10 +1,8 @@
 ﻿namespace Factory.Abstract
 {
-    /// <summary>
-    /// This is an abstract class and declares the factory method, which returns an object of type Product
-    /// </summary>
+    // This is an abstract class and declares the factory method, which returns an object of type Product.
     public abstract class Creator
     {
-        public abstract Product factoryMethod();
+        public abstract Product RunFactoryMethod();
     }
 }

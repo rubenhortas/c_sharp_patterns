@@ -16,8 +16,8 @@ namespace Factory
             Console.WriteLine("Abstract implementation");
 
             Creator creator = new ConcreteCreator(); // You can not instantiate abstract classes
-            Product product = creator.factoryMethod();
-            product.Operation();
+            Product product = creator.RunFactoryMethod();
+            product.DoOperation();
 
             Console.WriteLine();
 
