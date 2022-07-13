@@ -1,28 +1,30 @@
 ﻿using System;
 using Factory.Abstract;
-using Factory.Example;
 
 namespace Factory
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Factory Pattern");
-            Console.WriteLine("The factory design pattern in C# is used to replace class constructors, abstracting the process of object generation so that the type of the object instantiated can be determined at run-time");
-            Console.WriteLine();
+            //RunAbstractImplementation();
+            RunCreditCardsImplementation();
+        }
 
-            // Abstract implementation
+        private static void RunAbstractImplementation()
+        {
             Console.WriteLine("Abstract implementation");
 
-            Creator creator = new ConcreteCreator(); // You can not instantiate abstract classes
+            // You can not instantiate abstract classes.
+            Creator creator = new ConcreteCreator();
             Product product = creator.RunFactoryMethod();
+
             product.DoOperation();
+        }
 
-            Console.WriteLine();
-
-            // Example implementation
-            Console.WriteLine("Example implementation (credit cards)");
+        private static void RunCreditCardsImplementation()
+        {
+            Console.WriteLine("Credit Cards Implementation");
 
             CardFactory cardFactory;
             CreditCard creditCard;
@@ -38,10 +40,6 @@ namespace Factory
             cardFactory = new PlatinumFactory(500000, 1000);
             creditCard = cardFactory.GetCreditCard();
             creditCard.PrintDetails();
-
-            Console.WriteLine();
-
-            Console.ReadKey();
         }
     }
 }

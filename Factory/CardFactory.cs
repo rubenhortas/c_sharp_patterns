@@ -1,4 +1,4 @@
-﻿namespace Factory.Example
+﻿namespace Factory
 {
     // The 'Creator' Abstract Class.
     public abstract class CardFactory

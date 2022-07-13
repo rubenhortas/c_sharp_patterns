@@ -1,4 +1,4 @@
-﻿namespace Factory.Example
+﻿namespace Factory
 {
     // A 'ConcreteProduct' class.
     class TitaniumCreditCard : CreditCard

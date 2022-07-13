@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Factory.Example
+namespace Factory
 {
     // The 'Product' Abstract Class.
     public abstract class CreditCard

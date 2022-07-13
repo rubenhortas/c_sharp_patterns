@@ -1,7 +1,6 @@
-﻿namespace Factory.Example
+﻿namespace Factory
 {
-    // A 'ConcreteProduct' class.
-    class MoneyBackCreditCard : CreditCard
+    class PlatinumCreditCard : CreditCard
     {
         private readonly string _cardType;
         private int _creditLimit;
@@ -24,9 +23,9 @@
             set { _annualCharge = value; }
         }
 
-        public MoneyBackCreditCard(int creditLimit, int annualCharge)
+        public PlatinumCreditCard(int creditLimit, int annualCharge)
         {
-            _cardType = "MoneyBack";
+            _cardType = "Platinum";
             _creditLimit = creditLimit;
             _annualCharge = annualCharge;
         }
