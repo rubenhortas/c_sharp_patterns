@@ -1,19 +1,11 @@
-﻿using System;
-
-namespace Listener
+﻿namespace Listener
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.Clear();
-            Console.WriteLine("Listener Pattern");
-            Console.WriteLine();
-
             Listener listener = new Listener();
-            Subject subject = new Subject(listener);
-
-            Console.ReadKey();
+            Subject subject = new(listener);
         }
     }
 }

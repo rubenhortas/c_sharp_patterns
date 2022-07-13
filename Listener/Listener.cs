@@ -6,9 +6,7 @@ namespace Listener
     {
         public void Notify(string notification)
         {
-            Console.WriteLine("I have a notification:");
-            Console.WriteLine(notification);
-            Console.WriteLine();
+            Console.WriteLine($"I have a notification: {notification}");
         }
     }
 }
