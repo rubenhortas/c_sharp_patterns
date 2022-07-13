@@ -10,14 +10,14 @@ namespace Composite
             int saleTotal = 100;
 
             Console.WriteLine("The best for the customer");
-            CompoundStrategySetBestPriceForTheCustomer compoundStrategySetBestPriceForTheCustomer = new CompoundStrategySetBestPriceForTheCustomer();
+            CompoundStrategySetBestPriceForTheCustomer compoundStrategySetBestPriceForTheCustomer = new();
             sale = new Sale(saleTotal, compoundStrategySetBestPriceForTheCustomer);
             sale.GetTotal();
 
             Console.WriteLine();
 
             Console.WriteLine("Lo mejor para la tienda");
-            CompoundStrategySetBestPriceForTheStore compoundStrategySetBestPriceForTheStore = new CompoundStrategySetBestPriceForTheStore();
+            CompoundStrategySetBestPriceForTheStore compoundStrategySetBestPriceForTheStore = new();
             sale = new Sale(saleTotal, compoundStrategySetBestPriceForTheStore);
             sale.GetTotal();
         }
