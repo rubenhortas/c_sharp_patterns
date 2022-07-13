@@ -4,32 +4,36 @@ namespace Adapter
 {
     public class ElectricEngineAdapter : IEngine
     {
-        private ElectricEngine electricEngine;
+        private ElectricEngine _electricEngine;
 
         public ElectricEngineAdapter()
         {
             Console.WriteLine("Electric engine adapter");
-            electricEngine = new ElectricEngine();
+
+            _electricEngine = new ElectricEngine();
         }
 
         public void SpeedUp()
         {
             Console.WriteLine("Electric engine adapter speeding up");
-            electricEngine.MoveFaster();
+
+            _electricEngine.MoveFaster();
         }
 
         public void TurnOff()
         {
             Console.WriteLine("Electric engine adapter turned off");
-            electricEngine.Stop();
-            electricEngine.Disconnect();
+
+            _electricEngine.Stop();
+            _electricEngine.Disconnect();
         }
 
         public void TurnOn()
         {
             Console.WriteLine("Electric engine adapter turned on");
-            electricEngine.Connect();
-            electricEngine.Activate();
+
+            _electricEngine.Connect();
+            _electricEngine.Activate();
         }
     }
 }
