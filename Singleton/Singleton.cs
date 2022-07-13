@@ -4,18 +4,18 @@ namespace Singleton
 {
     public class Singleton
     {
-        private static Singleton instance;
+        private static Singleton _instance;
 
         private Singleton() { }
 
         public static Singleton GetInstance()
         {
-            if (instance == null)
+            if (_instance == null)
             {
-                instance = new Singleton();
+                _instance = new Singleton();
             }
 
-            return instance;
+            return _instance;
         }
 
         public void SayHelloWorld()

@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Singleton
+﻿namespace Singleton
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Singleton s1 = Singleton.GetInstance();
             Singleton s2 = Singleton.GetInstance();
@@ -13,8 +11,6 @@ namespace Singleton
             {
                 s1.SayHelloWorld();
             }
-
-            Console.ReadLine();
         }
     }
 }
