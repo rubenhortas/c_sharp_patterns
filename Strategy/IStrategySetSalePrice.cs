@@ -1,6 +1,6 @@
 ﻿namespace Strategy
 {
-    public interface IStrategySetPricingSelling
+    public interface IStrategySetSalePrice
     {
         float GetTotal(Sale sale);
     }

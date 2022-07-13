@@ -4,26 +4,26 @@ namespace Strategy
 {
     public class Sale
     {
-        private IStrategySetPricingSelling strategySetPricingSelling;
+        private IStrategySetSalePrice _strategySetSalePrice;
 
         public float Total { get; private set; }
 
-        public DateTime Date { get; set; }
+        public DateTime Date { get; private set; }
 
-        public Sale(float totalVenta, IStrategySetPricingSelling strategySetPricingSelling)
+        public Sale(float saleTotal, IStrategySetSalePrice strategySetPricingSelling)
         {
             Date = DateTime.Today;
-            Total = totalVenta;
-            this.strategySetPricingSelling = strategySetPricingSelling;
+            Total = saleTotal;
+            _strategySetSalePrice = strategySetPricingSelling;
 
-            Console.WriteLine($"{totalVenta}€ sale");
+            Console.WriteLine($"{saleTotal}€ sale");
         }
 
         public void GetTotal()
         {
-            float totalDespuesDescuento = strategySetPricingSelling.GetTotal(this);
+            float totalAfterDiscount = _strategySetSalePrice.GetTotal(this);
             
-            Console.WriteLine($"Total price after discount: {totalDespuesDescuento:0.00}€");
+            Console.WriteLine($"Total price after discount: {totalAfterDiscount:0.00}€");
         }
     }
 }

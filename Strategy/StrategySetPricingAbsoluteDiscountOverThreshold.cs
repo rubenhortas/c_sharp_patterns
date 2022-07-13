@@ -1,6 +1,6 @@
 ﻿namespace Strategy
 {
-    public class StrategySetPricingAbsoluteDiscountOverThreshold : IStrategySetPricingSelling
+    public class StrategySetPricingAbsoluteDiscountOverThreshold : IStrategySetSalePrice
     {
         public StrategySetPricingAbsoluteDiscountOverThreshold()
         {

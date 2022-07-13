@@ -12,7 +12,7 @@ namespace Strategy
             Console.WriteLine("Strategy Set Pricing Percentage Discount");
             Console.WriteLine($"{Constants.DiscountRate}% discount");
 
-            IStrategySetPricingSelling strategySetPricingPercentageDiscount = new StrategySetPricingPercentageDiscount();
+            IStrategySetSalePrice strategySetPricingPercentageDiscount = new StrategySetPricingPercentageDiscount();
 
             sale = new Sale(totalSale, strategySetPricingPercentageDiscount);
             sale.GetTotal();
@@ -22,7 +22,7 @@ namespace Strategy
             Console.WriteLine("Strategy Set Pricing Absolute Discount Over Threshold");
             Console.WriteLine($"{Constants.Discount}€ discount (minimum sale of {Constants.SpendingThreshold}€)");
 
-            IStrategySetPricingSelling strategySetPricingAbsoluteDiscountOverThreshold = new StrategySetPricingAbsoluteDiscountOverThreshold();
+            IStrategySetSalePrice strategySetPricingAbsoluteDiscountOverThreshold = new StrategySetPricingAbsoluteDiscountOverThreshold();
 
             sale = new Sale(totalSale, strategySetPricingAbsoluteDiscountOverThreshold);
             sale.GetTotal();

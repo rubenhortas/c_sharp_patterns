@@ -1,6 +1,6 @@
 ﻿namespace Strategy
 {
-    public class StrategySetPricingPercentageDiscount : IStrategySetPricingSelling
+    public class StrategySetPricingPercentageDiscount : IStrategySetSalePrice
     {
         public StrategySetPricingPercentageDiscount()
         {
