@@ -1,22 +1,20 @@
 ﻿namespace Factory.Example
 {
-    /// <summary>
-    /// A 'ConcreteCreator' class
-    /// </summary>
+    // A 'ConcreteCreator' class.
     class TitaniumFactory : CardFactory
     {
-        private int creditLimit;
-        private int annualCharge;
+        private int _creditLimit;
+        private int _annualCharge;
 
         public TitaniumFactory(int creditLimit, int annualCharge)
         {
-            this.creditLimit = creditLimit;
-            this.annualCharge = annualCharge;
+            _creditLimit = creditLimit;
+            _annualCharge = annualCharge;
         }
 
         public override CreditCard GetCreditCard()
         {
-            return new TitaniumCreditCard(creditLimit, annualCharge);
+            return new TitaniumCreditCard(_creditLimit, _annualCharge);
         }
     }
 }

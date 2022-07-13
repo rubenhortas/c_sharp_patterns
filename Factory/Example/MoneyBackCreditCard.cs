@@ -1,36 +1,34 @@
 ﻿namespace Factory.Example
 {
-    /// <summary>
-    /// A 'ConcreteProduct' class
-    /// </summary>
+    // A 'ConcreteProduct' class.
     class MoneyBackCreditCard : CreditCard
     {
-        private readonly string cardType;
-        private int creditLimit;
-        private int annualCharge;
+        private readonly string _cardType;
+        private int _creditLimit;
+        private int _annualCharge;
 
         public override string CardType
         {
-            get { return cardType; }
+            get { return _cardType; }
         }
 
         public override int CreditLimit
         {
-            get { return creditLimit; }
-            set { creditLimit = value; }
+            get { return _creditLimit; }
+            set { _creditLimit = value; }
         }
 
         public override int AnnualCharge
         {
-            get { return annualCharge; }
-            set { annualCharge = value; }
+            get { return _annualCharge; }
+            set { _annualCharge = value; }
         }
 
         public MoneyBackCreditCard(int creditLimit, int annualCharge)
         {
-            cardType = "MoneyBack";
-            this.creditLimit = creditLimit;
-            this.annualCharge = annualCharge;
+            _cardType = "MoneyBack";
+            _creditLimit = creditLimit;
+            _annualCharge = annualCharge;
         }
     }
 }

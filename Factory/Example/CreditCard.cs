@@ -2,9 +2,7 @@
 
 namespace Factory.Example
 {
-    /// <summary>
-    /// The 'Product' Abstract Class  
-    /// </summary>
+    // The 'Product' Abstract Class.
     public abstract class CreditCard
     {
         public abstract string CardType { get; }
@@ -15,9 +13,9 @@ namespace Factory.Example
         {
             Console.WriteLine();
             Console.WriteLine("Card details:");
-            Console.WriteLine("\tCard Type:\t{0}", CardType);
-            Console.WriteLine("\tCredit Limit:\t{0}", CreditLimit);
-            Console.WriteLine("\tAnnual Charge:\t{0}", AnnualCharge);
+            Console.WriteLine($"\tCard yype:\t{CardType}");
+            Console.WriteLine($"\tCredit limit:\t{CreditLimit}");
+            Console.WriteLine($"\tAnnual charge:\t{AnnualCharge}");
         }
     }
 }
