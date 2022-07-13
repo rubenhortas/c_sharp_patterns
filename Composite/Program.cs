@@ -4,24 +4,22 @@ namespace Composite
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Venta venta;
-            int totalVenta = 100;
+            Sale sale;
+            int saleTotal = 100;
 
-            Console.WriteLine("Lo mejor para el cliente");
-            EstrategiaCompuestaFijarPreciosLoMejorParaElCliente estrategiaCompuestaFijarPreciosLoMejorParaElCliente = new EstrategiaCompuestaFijarPreciosLoMejorParaElCliente();
-            venta = new Venta(totalVenta, estrategiaCompuestaFijarPreciosLoMejorParaElCliente);
-            venta.GetTotal();
+            Console.WriteLine("The best for the customer");
+            CompoundStrategySetBestPriceForTheCustomer compoundStrategySetBestPriceForTheCustomer = new CompoundStrategySetBestPriceForTheCustomer();
+            sale = new Sale(saleTotal, compoundStrategySetBestPriceForTheCustomer);
+            sale.GetTotal();
 
             Console.WriteLine();
 
             Console.WriteLine("Lo mejor para la tienda");
-            EstrategiaCompuestaFijarPreciosLoMejorParaLaTienda estrategiaCompuestaFijarPreciosLoMejorParaLaTienda = new EstrategiaCompuestaFijarPreciosLoMejorParaLaTienda();
-            venta = new Venta(totalVenta, estrategiaCompuestaFijarPreciosLoMejorParaLaTienda);
-            venta.GetTotal();
-
-            Console.ReadLine();
+            CompoundStrategySetBestPriceForTheStore compoundStrategySetBestPriceForTheStore = new CompoundStrategySetBestPriceForTheStore();
+            sale = new Sale(saleTotal, compoundStrategySetBestPriceForTheStore);
+            sale.GetTotal();
         }
     }
 }
