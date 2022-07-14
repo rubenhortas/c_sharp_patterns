@@ -8,7 +8,7 @@ namespace Composite
 
         public float Total { get; private set; }
 
-        public DateTime Date { get; set; }
+        public DateTime Date { get; private set; }
 
         public Sale(float total, IStrategySetSellingPrice strategySetSellingPrice)
         {
