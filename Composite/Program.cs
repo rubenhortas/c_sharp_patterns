@@ -16,7 +16,7 @@ namespace Composite
 
             Console.WriteLine();
 
-            Console.WriteLine("Lo mejor para la tienda");
+            Console.WriteLine("The best for the store");
             CompoundStrategySetBestPriceForTheStore compoundStrategySetBestPriceForTheStore = new();
             sale = new Sale(saleTotal, compoundStrategySetBestPriceForTheStore);
             sale.GetTotal();
